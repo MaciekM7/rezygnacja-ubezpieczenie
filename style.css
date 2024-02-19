@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background: #fdfdfe;
+    width: 1300px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    margin: 200px auto 0 auto;
+}
+
+.container {
+    width: 600px;
+    height: 400px;
+    margin-top: 40px;
+    background-color: #fcfaff;
+    border-radius: 5%;
+    box-shadow: 0px 0px 45px rgb(0 0 0 / 0.2);
+}
+
+.container h3 {
+    padding: 20px 0 35px 30px;
+}
+
+.container .radio {
+    background: #ffffff;
+    margin: 0 20px 23px 20px;
+    padding: 10px;
+    border: 1px solid #f8eff6;
+    border-radius: 6px;
+    font-size: .9rem;
+    letter-spacing: .02rem;
+    cursor: pointer;
+}
+
+.container .radio p {
+    display: inline;
+    margin-left: 5px;
+}
+
+.container .radio:has(>input:checked) {
+    border: 1px solid #a50f82;
+}
+
+.container .radio:hover {
+    border: 1px solid #fab6ea;
+}
+
+.secondary-container {
+    height: 250px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.secondary-container input[type=file] {
+    display: none;
+}
+
+.secondary-container label {
+    border: 1px #a50f82 dashed;
+    padding: 50px;
+    width: 80%;
+    height: 40px;
+    cursor: pointer;
+}
+
+.secondary-container p {
+    text-align: center;
+    color: #a50f82;
+    position: relative;
+    top: -30px;
+}
+
+.secondary-container p.file-label-lower {
+    color: #000;
+}
+
+a.button {
+    margin: auto;
+    width: 400px;
+    border: 1px solid black;
+    text-align: center;
+    background-color: #771e82;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 120px;
+    font-weight: 700;
+    color: #ddd;
+    text-decoration: none;
+}
+
+.visible-container {
+    display: flex;
+}
+
+.info-container {
+    height: 580px;
+}
+
+.info-container-shorter {
+    height: 490px;
+}
+
+.info-container p {
+    margin: 0 0 30px 30px;
+}
+
+.info-container p.required:after {
+    content: '*';
+    color: #f00;
+    margin-left: 4px;
+}
+
+.info-container form {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-container form>input {
+    width: 93%;
+    margin: 0 auto 18px auto;
+    padding: 11px;
+    border: 1px solid #ddd;
+}
+
+.info-container form>input:hover {
+    border: 1px solid #fab6ea;
+}
+
+.info-container form>input:focus {
+    outline: none;
+    border: 1px solid #771e82;
+    box-shadow: 0 0 10px rgba(119, 30, 130, 0.8);
+}
+
+.flex-row-container {
+    display: flex;
+}
+
+.flex-row-container label {
+    width: 49%;
+}
+
+.flex-row-container label {
+    width: 49%;
+}
+
+.input-hidden {
+    display: none;
+}
+
+.input-visible {
+    display: block;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rezygnacja z ubezpieczenia</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="flex-container">
+      <h1>Rezygnacja z ubezpieczenia</h1>
+      <div class="container">
+        <h3>Dlaczego chcesz zrezygnować?</h3>
+        <form action="">
+          <label for="art28">
+            <div class="radio">
+              <input
+                type="radio"
+                id="art28"
+                name="option"
+                value="art28"
+                onclick="addContainerVisibility()" />
+              <p>Art. 28 - nie chcę przedłużać umowy na kolejny rok</p>
+            </div>
+          </label>
+          <label for="art28a">
+            <div class="radio">
+              <input
+                type="radio"
+                id="art28a"
+                name="option"
+                value="art28a"
+                onclick="addContainerVisibility()" />
+              <p>Art. 28a - wypowiedzenie z tytułu podwójnego ubezpieczenia</p>
+            </div>
+          </label>
+          <label for="art31">
+            <div class="radio">
+              <input
+                type="radio"
+                id="art31"
+                name="option"
+                value="art31"
+                onclick="addContainerVisibility()" />
+              <p>Art. 31 - wypowiedzenie nabywcy pojazdu</p>
+            </div>
+          </label>
+          <label for="odstapienie">
+            <div class="radio">
+              <input
+                type="radio"
+                id="odstapienie"
+                name="option"
+                value="odstapienie"
+                onclick="addContainerVisibility()" />
+              <p>Odstąpienie - Art. 40 Ustawy o prawach konsumenta</p>
+            </div>
+          </label>
+          <label for="wyrejestrowanie">
+            <div class="radio">
+              <input
+                type="radio"
+                id="wyrejestrowanie"
+                name="option"
+                value="wyrejestrowanie"
+                onclick="addContainerVisibility()" />
+              <p>Wyrejestrowanie/demontaż</p>
+            </div>
+          </label>
+        </form>
+      </div>
+      <div class="container secondary-container" id="my-container">
+        <h3>Załącz dokument</h3>
+        <label for="file-choice">
+          <p class="file-label">Wybierz plik</p>
+          <p class="file-label-lower">GIF, JPG, JPEG, max 10 MB</p>
+          <input type="file" id="file-choice" />
+        </label>
+        <a href="dalej.html" class="button">Przejdź dalej</a>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

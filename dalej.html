@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rezygnacja z ubezpieczenia</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="flex-container">
+      <div class="container info-container" id="info-container">
+        <h3>Twoje dane</h3>
+        <p class="required">Polisa jest zawarta na firmę czy osobę prywatną?</p>
+        <form action="">
+          <div class="flex-row-container">
+            <label for="osoba">
+              <div class="radio">
+                <input
+                  type="radio"
+                  id="osoba"
+                  name="option2"
+                  value="osoba"
+                  onclick="osobaPrywatnaVisible()" />
+                <p>Osoba prywatna</p>
+              </div>
+            </label>
+            <label for="firmaRadio">
+              <div class="radio">
+                <input
+                  type="radio"
+                  id="firmaRadio"
+                  name="option2"
+                  value="firmaRadio"
+                  onclick="firmaVisible()" />
+                <p>Firma</p>
+              </div>
+            </label>
+          </div>
+          <input
+            type="text"
+            name="imie"
+            id="imie"
+            placeholder="Imię *"
+            class="input-hidden" />
+          <input
+            type="text"
+            name="nazwisko"
+            id="nazwisko"
+            placeholder="Nazwisko *"
+            class="input-hidden" />
+          <input
+            type="text"
+            name="firma"
+            id="firma"
+            placeholder="Nazwa firmy *"
+            class="input-hidden" />
+          <input
+            type="text"
+            name="regon"
+            id="regon"
+            placeholder="REGON *"
+            class="input-hidden" />
+          <input
+            type="text"
+            name="urodzenia"
+            id="urodzenia"
+            placeholder="Data urodzenia *"
+            class="input-hidden" />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Adres e-mail *"
+            class="input-hidden" />
+          <input
+            type="number"
+            name="phone"
+            id="phone"
+            placeholder="Numer telefonu *"
+            class="input-hidden" />
+          <input
+            type="number"
+            name="polisa"
+            id="polisa"
+            placeholder="Numer polisy/oferty *"
+            class="input-hidden" />
+        </form>
+      </div>
+      <a href="dalej.html" class="button">Przejdź dalej</a>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
