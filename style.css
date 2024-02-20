@@ -108,11 +108,11 @@ a.button {
 }
 
 .info-container {
-    height: 580px;
+    height: 620px;
 }
 
 .info-container-shorter {
-    height: 490px;
+    height: 550px;
 }
 
 .info-container p {
@@ -123,6 +123,12 @@ a.button {
     content: '*';
     color: #f00;
     margin-left: 4px;
+}
+
+.info-container p#validation {
+    margin-top: 20px;
+    /* text-transform: uppercase; */
+    color: #f00;
 }
 
 .info-container form {
@@ -166,4 +172,10 @@ a.button {
 
 .input-visible {
     display: block;
+}
+
+#success-info {
+    margin-top: 220px;
+    text-align: center;
+    font-size: 1.8rem;
 }

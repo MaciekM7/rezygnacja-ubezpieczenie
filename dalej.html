@@ -13,11 +13,11 @@
         <p class="required">Polisa jest zawarta na firmę czy osobę prywatną?</p>
         <form action="">
           <div class="flex-row-container">
-            <label for="osoba">
+            <label for="osobaRadio">
               <div class="radio">
                 <input
                   type="radio"
-                  id="osoba"
+                  id="osobaRadio"
                   name="option2"
                   value="osoba"
                   onclick="osobaPrywatnaVisible()" />
@@ -85,10 +85,11 @@
             placeholder="Numer polisy/oferty *"
             class="input-hidden" />
         </form>
+        <p id="validationAlert"></p>
       </div>
-      <a href="dalej.html" class="button">Przejdź dalej</a>
+      <a href="#" class="button" onclick="validate()">Przejdź dalej</a>
     </div>
-
+    <script></script>
     <script src="script.js"></script>
   </body>
 </html>
